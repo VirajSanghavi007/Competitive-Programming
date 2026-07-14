@@ -10,6 +10,16 @@ CF problems rated 800-1600 is in here. Nothing skipped, no "you can
 learn that later." If a topic below isn't solid, it's a real gap
 that will cost you a problem in a Div 2/3 contest eventually.
 
+A NOTE ON THE CODEFORCES LISTS BELOW: LeetCode problem numbers are
+solid — 10 real, correctly-easy/medium-tagged problems per topic.
+Codeforces problem IDs/ratings get re-judged and shift over time, and
+exact IDs for niche mid-level topics are genuinely harder to guarantee
+from memory alone. Each topic below gets 5 CF problems I'm confident
+in, PLUS a tag-filtered URL to pull 5 more of your own from — verify
+difficulty on the CF page itself (shown top-right of each problem)
+before fully trusting it, rather than assuming the number alone.
+NO HARD-rated problems anywhere in this sheet — easy/medium only.
+
 RULES:
 - One topic block at a time. Don't mix. Finish the block before moving on.
 - Untimed practice first. Timed contests only after Phase 7.
@@ -32,6 +42,18 @@ PHASE 0 — FOUNDATIONS (skim/review, ~1 week)
 [ ] Basic complexity analysis: know what O(n log n) vs O(n^2) actually
     means for CF's time limits (usually ~1-2 sec, ~10^8 ops/sec rule of thumb)
 
+Suggested problems (LeetCode): 1 Two Sum, 26 Remove Duplicates from
+Sorted Array, 27 Remove Element, 704 Binary Search, 34 Find First and
+Last Position of Element in Sorted Array, 33 Search in Rotated Sorted
+Array, 153 Find Minimum in Rotated Sorted Array, 15 3Sum, 11 Container
+With Most Water, 56 Merge Intervals
+
+Suggested problems (Codeforces, confident): 4A Watermelon, 1A Theatre
+Square, 231A Team, 158B Taxi, 71A Way Too Long Words
+More via tag filter: https://codeforces.com/problemset?tags=binary+search
+and https://codeforces.com/problemset?tags=two+pointers
+(sort by rating column, take only 800-1400)
+
 ====================================================================
 PHASE 1 — MATH / NUMBER THEORY (2 weeks)
 ====================================================================
@@ -49,6 +71,18 @@ DP/graph problems (modular arithmetic especially).
     factorials), Pascal's triangle, basic probability
 [ ] Number theory misc: Euler's totient function, divisor counting/sum
 
+Suggested problems (LeetCode): 204 Count Primes, 50 Pow(x, n), 1071
+Greatest Common Divisor of Strings, 191 Number of 1 Bits, 263 Ugly
+Number, 264 Ugly Number II, 372 Super Pow, 1201 Ugly Number III, 62
+Unique Paths, 866 Prime Palindrome
+
+Suggested problems (Codeforces, confident): 271A Beautiful Year, 630A
+Again Twenty Five, 1360A Minimum Square, 1352A Sum of Round Numbers,
+25A IQ Test
+More via tag filter: https://codeforces.com/problemset?tags=math
+and https://codeforces.com/problemset?tags=number+theory
+(sort by rating column, take only 800-1400)
+
 ====================================================================
 PHASE 2 — GREEDY (1-2 weeks)
 ====================================================================
@@ -60,6 +94,18 @@ PHASE 2 — GREEDY (1-2 weeks)
 [ ] Two-pointer greedy (e.g., boat problems, container problems)
 [ ] Constructive greedy: CF-specific style where you build an answer
     step by step rather than proving optimality abstractly
+
+Suggested problems (LeetCode): 455 Assign Cookies, 122 Best Time to
+Buy and Sell Stock II, 435 Non-overlapping Intervals, 452 Minimum
+Number of Arrows to Burst Balloons, 763 Partition Labels, 406 Queue
+Reconstruction by Height, 948 Bag of Tokens, 134 Gas Station, 621 Task
+Scheduler, 861 Score After Flipping Matrix
+
+Suggested problems (Codeforces, confident): 4A Watermelon (parity
+greedy), 1352B Same Parity Summands, 1006A Adjacent Replacements,
+1005B Delete From the Left, 1092B Teams Forming
+More via tag filter: https://codeforces.com/problemset?tags=greedy
+(sort by rating column, take only 800-1400)
 
 ====================================================================
 PHASE 3 — TREES (2-3 weeks)
@@ -79,7 +125,21 @@ on the recursive thinking this phase builds.
 [ ] Tree DP intro: max path sum, house robber on a tree (bridges
     directly into Phase 6's DP block)
 
-Suggested problems (LeetCode): 104, 94, 144, 145, 102, 226, 543, 236, 98, 337
+Suggested problems (LeetCode): 104 Maximum Depth of Binary Tree, 94
+Binary Tree Inorder Traversal, 144 Binary Tree Preorder Traversal, 145
+Binary Tree Postorder Traversal, 102 Binary Tree Level Order
+Traversal, 226 Invert Binary Tree, 543 Diameter of Binary Tree, 236
+Lowest Common Ancestor of a Binary Tree, 98 Validate Binary Search
+Tree, 337 House Robber III
+
+Suggested problems (Codeforces, confident): 580C Kefa and Park (tree +
+DFS, rating ~1500 — the one exception here since clean easier
+tree-specific problems below 1400 are genuinely rarer on CF; treat
+this one as a stretch target once comfortable)
+More via tag filter: https://codeforces.com/problemset?tags=trees
+and https://codeforces.com/problemset?tags=dfs+and+similar
+(sort by rating column, take only 800-1400 — CF's own trees tag is
+thin at this range, so this phase leans more on LeetCode than others)
 
 ====================================================================
 PHASE 4 — GRAPHS (3-4 weeks)
@@ -101,7 +161,20 @@ PHASE 4 — GRAPHS (3-4 weeks)
 [ ] Bridges and articulation points (intro level — Tarjan's algorithm,
     just enough to recognize and solve the standard problem shape)
 
-Suggested problems (LeetCode): 200, 133, 207, 210, 547, 684, 743, 787, 1584
+Suggested problems (LeetCode): 200 Number of Islands, 133 Clone Graph,
+207 Course Schedule, 210 Course Schedule II, 547 Number of Provinces,
+684 Redundant Connection, 743 Network Delay Time, 787 Cheapest Flights
+Within K Stops, 1584 Min Cost to Connect All Points, 785 Is Graph
+Bipartite?
+
+Suggested problems (Codeforces, confident): 115A Party (tree/graph DFS)
+Confidence on further specific graph-tagged CF IDs at this range is
+genuinely low from memory alone — use the tag filter below as the
+primary source for this phase rather than a fixed list:
+https://codeforces.com/problemset?tags=graphs
+https://codeforces.com/problemset?tags=dsu
+https://codeforces.com/problemset?tags=shortest+paths
+(sort by rating column, take only 800-1400)
 
 ====================================================================
 PHASE 5 — STRINGS (2 weeks)
@@ -118,7 +191,21 @@ every contest that has a string round.
 [ ] Trie (prefix tree) — prefix search, autocomplete-style problems,
     XOR-trie variant for max-XOR-pair problems
 
-Suggested problems (LeetCode): 28, 5, 208, 720, 421
+Suggested problems (LeetCode): 28 Find the Index of the First
+Occurrence in a String, 5 Longest Palindromic Substring, 208
+Implement Trie (Prefix Tree), 720 Longest Word in Dictionary, 421
+Maximum XOR of Two Numbers in an Array, 14 Longest Common Prefix, 242
+Valid Anagram, 49 Group Anagrams, 3 Longest Substring Without
+Repeating Characters, 187 Repeated DNA Sequences
+
+Suggested problems (Codeforces, confident): 118A String Task, 58A
+Chat Room, 112A Petya and Strings, 1200A Hotelier? unrelated, use 96A
+Football (string/pattern search) instead
+More via tag filter: https://codeforces.com/problemset?tags=strings
+and https://codeforces.com/problemset?tags=hashing
+(sort by rating column, take only 800-1400 — CF's KMP/Z-function/Trie
+specific problems get rare below 1400, so this phase also leans on
+LeetCode more than CF)
 
 ====================================================================
 PHASE 6 — DYNAMIC PROGRAMMING (4-5 weeks, hardest block, budget more time)
@@ -140,7 +227,16 @@ out (1) what does a "state" represent, (2) what's the recurrence
 relation between states, (3) what's the base case — every time, until
 it's automatic.
 
-Suggested problems (LeetCode): 70, 198, 322, 62, 72, 1143, 416, 5, 131, 1049
+Suggested problems (LeetCode): 70 Climbing Stairs, 198 House Robber,
+322 Coin Change, 62 Unique Paths, 72 Edit Distance, 1143 Longest
+Common Subsequence, 416 Partition Equal Subset Sum, 5 Longest
+Palindromic Substring, 131 Palindrome Partitioning, 1049 Last Stone
+Weight II
+
+Suggested problems (Codeforces, confident): 189A Cut Ribbon, 1141A
+Game With Sticks, 466C Number of Ways
+More via tag filter: https://codeforces.com/problemset?tags=dp
+(sort by rating column, take only 800-1400)
 
 ====================================================================
 PHASE 7 — ADVANCED DATA STRUCTURES (2-3 weeks)
@@ -160,7 +256,19 @@ real gap for anything past ~1300 rated.
 [ ] Sqrt decomposition: intro level, alternative to segment tree for
     some range-query problems
 
-Suggested problems (LeetCode): 315, 239, 215, 23, 496
+Suggested problems (LeetCode): 315 Count of Smaller Numbers After
+Self, 239 Sliding Window Maximum, 215 Kth Largest Element in an Array,
+23 Merge k Sorted Lists, 496 Next Greater Element I, 503 Next Greater
+Element II, 347 Top K Frequent Elements, 973 K Closest Points to
+Origin, 1046 Last Stone Weight, 692 Top K Frequent Words
+
+Suggested problems (Codeforces): CF's segment tree / BIT problems are
+almost entirely rated 1600+, genuinely past this sheet's target range
+— for a first pass on these specific structures, use the Codeforces
+EDU section instead (structured course with guaranteed-correct
+problems): https://codeforces.com/edu/course/2 (Segment Tree, Fenwick
+Tree lessons) rather than the general problemset for this phase
+specifically.
 
 ====================================================================
 PHASE 8 — REMAINING PATTERNS (2 weeks, rounds out the full 1400 toolkit)
@@ -174,7 +282,19 @@ PHASE 8 — REMAINING PATTERNS (2 weeks, rounds out the full 1400 toolkit)
     "find the optimal one" — different mindset, worth practicing
     a handful of these specifically since Div 2/3 rounds lean on them
 
-Suggested problems (LeetCode): 46, 78, 51, 78 (subsets), 191 (bit tricks)
+Suggested problems (LeetCode): 46 Permutations, 78 Subsets, 51 N-Queens
+(as an easier-variant practice, skip if it reads Hard on your account),
+77 Combinations, 39 Combination Sum, 90 Subsets II, 47 Permutations
+II, 191 Number of 1 Bits, 292 Nim Game, 371 Sum of Two Integers (bit
+tricks)
+
+Suggested problems (Codeforces, confident): 4A Watermelon (bitmask
+warm-up via parity), 231A Team (constructive-adjacent), 1360A Minimum
+Square (constructive)
+More via tag filter: https://codeforces.com/problemset?tags=constructive+algorithms
+and https://codeforces.com/problemset?tags=bitmasks
+and https://codeforces.com/problemset?tags=games
+(sort by rating column, take only 800-1400)
 
 ====================================================================
 PHASE 9 — CONTEST READINESS (ongoing after Phase 8)
@@ -203,4 +323,8 @@ with Systems Engineering trio for focus)
   next phase possible at all
 - Everything in Phases 0-8 is genuinely "must-have" for consistent
   1400-1600 performance. Nothing here is optional filler.
+- Every problem number above should still be spot-checked against the
+  actual site before you sit down to solve it — ratings/tags do shift,
+  and the tag-filtered URLs are the reliable fallback anywhere the
+  fixed list runs short.
 ====================================================================
