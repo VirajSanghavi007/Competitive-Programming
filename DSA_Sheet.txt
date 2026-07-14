@@ -1,0 +1,206 @@
+====================================================================
+DSA SHEET — FULL — TARGET: CODEFORCES SPECIALIST (1400+) / LEETCODE 300-400
+====================================================================
+Starting point: Codeforces Newbie (358). Solid on Arrays, Math basics,
+Two Pointers. Weak/untouched: Trees, Graphs, DP, Strings, advanced
+data structures.
+
+This is the COMPLETE list — every topic that shows up regularly in
+CF problems rated 800-1600 is in here. Nothing skipped, no "you can
+learn that later." If a topic below isn't solid, it's a real gap
+that will cost you a problem in a Div 2/3 contest eventually.
+
+RULES:
+- One topic block at a time. Don't mix. Finish the block before moving on.
+- Untimed practice first. Timed contests only after Phase 7.
+- If stuck >25 min on an easy/medium, read the editorial, re-solve from
+  scratch the next day without looking. That's the actual learning step,
+  not the first read.
+- Don't skip a phase because it feels boring — the rating gain compounds
+  across topics, and CF problems freely mix 2-3 topics at once past 1200.
+
+====================================================================
+PHASE 0 — FOUNDATIONS (skim/review, ~1 week)
+====================================================================
+[ ] Arrays: prefix sums, difference arrays, sliding window, Kadane's algorithm
+[ ] Two pointers: pair sum, remove duplicates, merge two sorted arrays
+[ ] Sorting: know when to reach for it, custom comparators, counting sort
+[ ] Binary search: standard, PLUS "binary search on the answer" (this
+    pattern is new territory even if plain binary search isn't)
+[ ] Ternary search: unimodal function optimization (appears less often
+    but shows up specifically in 1300-1600 range problems)
+[ ] Basic complexity analysis: know what O(n log n) vs O(n^2) actually
+    means for CF's time limits (usually ~1-2 sec, ~10^8 ops/sec rule of thumb)
+
+====================================================================
+PHASE 1 — MATH / NUMBER THEORY (2 weeks)
+====================================================================
+Why early: shows up standalone AND as a hidden requirement inside
+DP/graph problems (modular arithmetic especially).
+
+[ ] GCD/LCM, Euclidean algorithm, extended Euclidean algorithm
+[ ] Sieve of Eratosthenes, prime factorization in O(log n) via
+    smallest-prime-factor sieve
+[ ] Modular arithmetic: mod add/sub/mul, modular exponentiation
+    (fast power)
+[ ] Modular inverse: via Fermat's little theorem (prime mod) and
+    extended Euclidean (general case)
+[ ] Combinatorics basics: nCr mod p (precomputed factorials + inverse
+    factorials), Pascal's triangle, basic probability
+[ ] Number theory misc: Euler's totient function, divisor counting/sum
+
+====================================================================
+PHASE 2 — GREEDY (1-2 weeks)
+====================================================================
+[ ] Interval scheduling / activity selection
+[ ] Exchange argument reasoning (the actual proof technique behind
+    "why is greedy correct here" — practice explaining this out loud
+    for every greedy problem you solve)
+[ ] Huffman-coding-style priority queue greedy problems
+[ ] Two-pointer greedy (e.g., boat problems, container problems)
+[ ] Constructive greedy: CF-specific style where you build an answer
+    step by step rather than proving optimality abstractly
+
+====================================================================
+PHASE 3 — TREES (2-3 weeks)
+====================================================================
+Why here: recursion clicks fastest on trees. Graphs and DP both lean
+on the recursive thinking this phase builds.
+
+[ ] Binary tree traversals: preorder, inorder, postorder (recursive
+    AND iterative with a stack — do both)
+[ ] Level-order traversal (BFS on a tree)
+[ ] Height/depth of a tree, diameter of a tree
+[ ] Lowest Common Ancestor (LCA): naive O(n) version first, then
+    binary lifting (O(log n) per query) once comfortable
+[ ] Binary Search Tree: insert, delete, search, validate BST
+[ ] Euler tour / flattening a tree (needed later for segment tree on
+    trees, subtree queries)
+[ ] Tree DP intro: max path sum, house robber on a tree (bridges
+    directly into Phase 6's DP block)
+
+Suggested problems (LeetCode): 104, 94, 144, 145, 102, 226, 543, 236, 98, 337
+
+====================================================================
+PHASE 4 — GRAPHS (3-4 weeks)
+====================================================================
+[ ] Graph representations: adjacency list vs matrix, when to use which
+[ ] DFS and BFS from scratch (no library calls) — both iterative and
+    recursive DFS
+[ ] Connected components, cycle detection (directed AND undirected —
+    different algorithms, don't conflate them)
+[ ] Topological sort (Kahn's algorithm + DFS-based version)
+[ ] Union-Find (Disjoint Set Union) with path compression + union by
+    rank — shows up constantly, learn it once, properly
+[ ] Shortest path, in this order: BFS (unweighted) -> Dijkstra
+    (weighted, non-negative) -> Bellman-Ford (negative weights allowed)
+    -> Floyd-Warshall (all-pairs shortest path, small n)
+[ ] Minimum Spanning Tree: Kruskal's (uses your Union-Find) AND
+    Prim's — know both, pick one to be fluent in
+[ ] Bipartite graph check (via 2-coloring / BFS)
+[ ] Bridges and articulation points (intro level — Tarjan's algorithm,
+    just enough to recognize and solve the standard problem shape)
+
+Suggested problems (LeetCode): 200, 133, 207, 210, 547, 684, 743, 787, 1584
+
+====================================================================
+PHASE 5 — STRINGS (2 weeks)
+====================================================================
+Frequently skipped by self-taught learners, then costs a problem in
+every contest that has a string round.
+
+[ ] String hashing (polynomial rolling hash) — substring comparison
+    in O(1) after O(n) preprocessing
+[ ] KMP (Knuth-Morris-Pratt) — pattern matching in O(n+m), understand
+    the failure function, don't just memorize the code
+[ ] Z-function — alternative to KMP for pattern matching, useful for
+    a different class of problems (string periodicity)
+[ ] Trie (prefix tree) — prefix search, autocomplete-style problems,
+    XOR-trie variant for max-XOR-pair problems
+
+Suggested problems (LeetCode): 28, 5, 208, 720, 421
+
+====================================================================
+PHASE 6 — DYNAMIC PROGRAMMING (4-5 weeks, hardest block, budget more time)
+====================================================================
+[ ] 1D DP: climbing stairs, house robber, coin change (min coins)
+[ ] 2D DP: unique paths, edit distance, longest common subsequence
+[ ] Knapsack family: 0/1 knapsack, unbounded knapsack, subset sum
+[ ] String DP: longest palindromic substring, palindrome partitioning
+[ ] DP on trees (revisit Phase 3's tree DP, now with full pattern
+    vocabulary)
+[ ] Bitmask DP: traveling-salesman style, small n (n <= ~20)
+[ ] Digit DP: intro level — counting numbers with a property up to N
+[ ] DP optimization intro: when O(n^2) DP needs to become O(n log n)
+    (just recognize the shape for now — full optimization techniques
+    like Convex Hull Trick are past 1600, not required yet)
+
+The pattern-recognition trick: for every DP problem, explicitly write
+out (1) what does a "state" represent, (2) what's the recurrence
+relation between states, (3) what's the base case — every time, until
+it's automatic.
+
+Suggested problems (LeetCode): 70, 198, 322, 62, 72, 1143, 416, 5, 131, 1049
+
+====================================================================
+PHASE 7 — ADVANCED DATA STRUCTURES (2-3 weeks)
+====================================================================
+This is the block self-taught learners skip most often, and it's a
+real gap for anything past ~1300 rated.
+
+[ ] Fenwick Tree / Binary Indexed Tree (BIT): point update, prefix
+    sum query, in O(log n)
+[ ] Segment Tree: range sum/min/max query with point update, then
+    range update with lazy propagation
+[ ] Sparse Table: O(1) range min/max query for static (non-updating)
+    arrays, built via O(n log n) preprocessing
+[ ] Monotonic stack / monotonic deque: next greater element, sliding
+    window maximum
+[ ] Heaps/priority queues: k-th largest, merge k sorted lists, top-k
+[ ] Sqrt decomposition: intro level, alternative to segment tree for
+    some range-query problems
+
+Suggested problems (LeetCode): 315, 239, 215, 23, 496
+
+====================================================================
+PHASE 8 — REMAINING PATTERNS (2 weeks, rounds out the full 1400 toolkit)
+====================================================================
+[ ] Backtracking: permutations, combinations, N-Queens, subsets
+[ ] Bitmasking techniques: subset enumeration, submask iteration
+[ ] Game theory basics: Nim game, Sprague-Grundy intro (appears
+    occasionally 1300+, worth knowing the shape even briefly)
+[ ] Constructive algorithms as a category: CF-specific problem style
+    where the task is "construct any valid answer" rather than
+    "find the optimal one" — different mindset, worth practicing
+    a handful of these specifically since Div 2/3 rounds lean on them
+
+Suggested problems (LeetCode): 46, 78, 51, 78 (subsets), 191 (bit tricks)
+
+====================================================================
+PHASE 9 — CONTEST READINESS (ongoing after Phase 8)
+====================================================================
+[ ] Start VIRTUAL Codeforces contests (Div 3/4 first) — untimed
+    replay is fine at first, add the clock once comfortable
+[ ] Target: solve A-C consistently in Div 3, then push into D
+[ ] Do upsolving after every contest — the problems you DIDN'T solve
+    are worth more than the ones you did
+[ ] Read editorials for every problem you couldn't solve, even ones
+    you eventually solved slowly — there's often a faster/cleaner
+    approach worth knowing
+[ ] Once Specialist (1400+) rating is hit, this sheet is done — you'll
+    know what comes next by then anyway (Expert-level topics: heavy-
+    light decomposition, persistent data structures, FFT, suffix
+    arrays — none of that is needed for 1400)
+
+====================================================================
+LOOSE TARGETS (not deadlines — background work, don't let it compete
+with Systems Engineering trio for focus)
+====================================================================
+- ~300-400 LeetCode problems solved by end of undergrad
+- Codeforces rating 1400+ (Specialist)
+- Topic order matters more than speed — don't rush early phases to get
+  to the "cooler" ones faster, each phase's fluency is what makes the
+  next phase possible at all
+- Everything in Phases 0-8 is genuinely "must-have" for consistent
+  1400-1600 performance. Nothing here is optional filler.
+====================================================================
